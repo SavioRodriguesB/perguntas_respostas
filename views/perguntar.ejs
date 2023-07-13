@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include ('partials/header') %>
+    </head>
+    <body>
+        <%- include ('partials/navbar') %>
+        <div class="container">
+
+            <div class="card" id="formulario-pergunta">
+                <div class="card-header">
+                    <h1> Realizar pergunta </h1>
+                </div>
+            
+                <div class="card-body">
+                    <form method="POST" action="/cadastrarPergunta">
+                        <label>Título</label>
+                        <input type="text" name="titulo" class="form-control" placeholder="Título">
+                        <label>Descrição</label><br>
+                        <textarea class="form-control" name="descricao" placeholder="Digite sua pergunta"></textarea><br>
+                        <button class="btn btn-primary">Perguntar</button>
+                    </form> 
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <%- include ('partials/footer') %>
+</html>
